@@ -5,14 +5,14 @@
     <title>2</title>
 </head>
 <body>
-<input type="text" id="text">
+<div id="text"></div>
 <script>
 
-    let text=document.querySelector('#text');
-    window.addEventListener('storage',fn);
 
+    window.addEventListener('storage',fn);//设置storage事件监听，当storage有改动时 便调用fn函数
     function fn() {
-        text.value=window.localStorage.getItem('name');
+        console.log('fn已调用');
+        document.querySelector('#text').innerHTML=window.localStorage.getItem('name');//将localstorage的值写到html上
     }
 
 

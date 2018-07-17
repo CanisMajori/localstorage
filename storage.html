@@ -22,7 +22,7 @@
 
      他们有相同的原型，操作方法一致*/
     console.log(window.localStorage==window.sessionStorage);//false
-    console.log(window.localStorage.__proto__==window.sessionStorage.__proto__);//true
+    console.log(window.localStorage.__proto__===window.sessionStorage.__proto__);//true
     console.log(window.localStorage.__proto__);
 
     window.localStorage.age=33;

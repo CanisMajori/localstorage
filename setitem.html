@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text">
+<script>
+    document.getElementById('text').onkeyup=function () {
+       window.localStorage.setItem('name',this.value);//将输入值存入localstorage
+    }
+
+
+
+
+</script>
+</body>
+</html>
